@@ -20,6 +20,7 @@
     align-items: center;
 }
 #matter input{
+    width: 230px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 span{
@@ -33,11 +34,7 @@ span{
 .search{
     padding-right: 20px;
 }
-.table{
-    margin: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-}
 .col-2{
 
     margin-top: 10px;
@@ -49,9 +46,11 @@ span{
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px; 
+    cursor: pointer;
 }
 #list{
     padding: 0px;
+    
 }
 #mat{
     
@@ -85,9 +84,9 @@ span{
     width: 98%;
     margin-top: 5px;
     height: 15vh;
-    background-color: rgba(146, 4, 146, 0.61);
+    background-color: rgba(149,44,173,255);
     border-radius: 3px;
-    box-shadow: 0px 9px 10px rgb(75, 2, 75);
+    box-shadow: 0px 3px 5px rgb(75, 2, 75);
 }
 .left{
     width:240px !important;
