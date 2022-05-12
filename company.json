@@ -6,10 +6,45 @@
             "fabNo":"7098708",
             "phoneNo":"9999999999",
             "lastUpdate":"2/3/2022",
-            "mod":"SD-10",
-            "motor":"Motor",
-            "value":"550 Hours"
+            "mod":"SD-10"            
     },
+    "drive":[{
+        "Current:":"20A",
+        "Hours":"10 H",
+        "Status":"1"
+    },{
+        "Current":"20A",
+        "Hours":"10 Hours",
+        "Status":"-1"  
+    },{
+        "Current":"20A",
+        "Hours":"10 Hours",
+        "Vibration":"10",
+        "Break":"100 mm",
+        "Status":"0"
+    },{
+        "Current Load":"100 T",
+        "Max Load":"1000T"
+    },{
+        "Total No of Starts":"1",
+        "Total Running Time":"0",
+        "The Measured Actual Load Value":"0",
+        "Line Voltage monitoring R,Y,B":"0",
+        "Temperature Measured at Motor-1":"0",
+        "Total run Time in Fast Speed":"0",
+        "Motor Current  Monitoring  (R,Y,B)":"0",
+        "Total run Time in Slow Speed":"0",
+        "Total No of Over Load Incidents":"0",
+        "Total No of Starts in Up Direction ":"0",
+        "Total No of Starts in Down Direction ":"0",
+        "Total No of Over Voltage Incidents":"0",
+        "Total No of Under Voltage Incidents":"0",
+        "Total No of Over Current Incidents":"0",
+        "Wear Indicator for Wheel":"0"
+    }
+
+
+    ],
     "grid":{
         
         "Air Pressure":"0",

@@ -12,7 +12,7 @@ body{
     border-bottom: 1px solid rgba(128, 128, 128, 0.541);
 }
 #logo{
-    width: 100px;
+    width: 200px;
     /* padding: 20px; */
 }
 /* ---------------------------------------------------------content body  */
@@ -98,9 +98,10 @@ body{
     display: flex;
     justify-content:space-between;
     padding: 15px;
-    width: 98%;
+    width: 96%;
     margin-top: 5px;
     margin-bottom: 10px;
+    margin-left: 20px;
     height: 15vh;
     /* background-color: rgba(149,44,173,255); */
     background-image: linear-gradient(to right,#f36ca7 ,#a31e98) ;
@@ -120,14 +121,13 @@ body{
 .tab{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-collapse: collapse;
-    width: 300px;
+    width: 280px;
     margin:20px;
-    border: 1px solid rgba(128, 128, 128, 0.308);
-    
-  
-  
+    border: 1px solid rgba(128, 128, 128, 0.308); 
+    font-weight: 800;
 }
 td {
+    font-size: medium;
     border: 1px solid #dddddd;
     text-align: left;
     
@@ -172,12 +172,10 @@ transform: translateX(2%);
 .img{
     position: absolute;
     display: inline-block;
-    bottom: 110px;
-    /* border: 2px solid red; */
-    right: 12%;
-    top:2%;
+    right: 3%;
+    top:152px;
     z-index: -100;
-    width:45%;
+    width:60%;
     height: 69vh;
     
 }
@@ -185,36 +183,96 @@ transform: translateX(2%);
     width: 100%;
     height: 100%;
 }
-#motor{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: absolute;
-    right: 10%;
-    top: 30%;
+#bridgeDrive,#trollyDrive{
+    width: 100px;
+    height: 80px;
+    border: 1px solid #9808cc62;
     text-align: center;
-    display: inline-block;
-    border: 1px dotted rgba(0, 0, 0, 0.089);
-    width: 10%;
-    height: 100%;
+    padding: 0px;
+    font-size: smaller;
+    font-weight: 800;
+    color: #a31e98 !important;
 
 }
+#bridgeDrive{
+    position:absolute;
+    /* right: 13%; */
+    transform: translateY(280px);
+    right: 12%;
+    background-color: #f5f5f5;
 
-#motor h5{
-    border-radius: 5px;
+}
+#trollyDrive{
+    position:absolute;
+    /* right: 13%; */
+    transform: translateY(160px);
+    right: 42%;
+    background-color: #fdfdfd;
+}
+#hoistDrive{
+    position:absolute;
+    transform: translateY(3px);
+    right:25%;
+    width: 100px;
+    height: 117px;
+    border: 1px solid #9808cc62;
+    text-align: center;
+    padding: 0px;
+    font-size: smaller;
+    font-weight: 800;
+    background-color: #fdfdfd;
+    color: #a31e98 !important;
+
+}
+#load{
+    position:absolute;
+    background-color: #fdfdfd;
+    transform: translateY(250px);
+
+    right: 30%;
+    width: 120px;
+    height: 60px;
+    border: 1px solid #9708CC;
+    border: 1px solid #9808cc62;
+
+    text-align: center;
+    padding: 0px;
+    font-size: smaller;
+    font-weight: 800;
+    color: #a31e98 !important;
+}
+ #bridgeList,#trollyList,#hoistList,#loadList{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    
+}
+#bridgeList td,#trollyList td,#hoistList td,#loadList td{
+    text-align: center;
+    padding: 0px;
+    font-size: smaller;
+    font-weight: 800;
+}
+#all{
+    position:absolute;
+
+    width: 480px;
+    height: 600px;
+    border: 1px solid #9808cc62;
+    
+    text-align: center;
+    padding: 0px;
+    font-size: smaller;
+    font-weight: 800;
+    color: #a31e98 !important;
+    offset:scrool;
+}
+#paraList {
+    text-align: center;
+    padding: 0px;
+    font-size: medium;
     font-weight: 700;
-    background-color:#736efe96;
-        padding: 0.1em;
-        margin: 1px;
-        
 }
-#motor h6{
-    border-radius: 5px;
-    padding: 0.2em;
-    background-color:#32aadadc;
 
-}
-#hide{
-    display: none;
-}
 
 @media (max-width:780px){
     .slide{

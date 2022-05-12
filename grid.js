@@ -24,7 +24,7 @@ $(document).ready(function(){
         var button = document.createElement("span");
         if(data[i].status=="active"){
             block.classList.add("active");
-          
+            
           }else{
             
             block.classList.add("inActive");

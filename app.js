@@ -88,15 +88,78 @@ var time= document.getElementById("update");
 var span = document.createElement("span");
 span.innerText=theCompressor.lastUpdate;
 time.appendChild(span)
+// image data
+let img =info.drive[0];
+let bdrive = document.getElementById("bridgeList");
+for (let [key, value] of Object.entries(img)) {
+  let tr = document.createElement("tr");
+  let ta = document.createElement("td");
+  let tb = document.createElement("td");
+  tb.innerText=value;
+  ta.innerText=key;
+  tr.appendChild(ta);
+  tr.appendChild(tb)
+  bdrive.appendChild(tr);
+}
+let img1 =info.drive[1];
+let tdrive = document.getElementById("trollyList");
+for (let [key, value] of Object.entries(img1)) {
+  let tr = document.createElement("tr");
+  let ta = document.createElement("td");
+  let tb = document.createElement("td");
+  tb.innerText=value;
+  ta.innerText=key;
+  tr.appendChild(ta);
+  tr.appendChild(tb)
+  tdrive.appendChild(tr);
+}
+let img2 =info.drive[2];
+let hdrive = document.getElementById("hoistList");
+for (let [key, value] of Object.entries(img2)) {
+  let tr = document.createElement("tr");
+  let ta = document.createElement("td");
+  let tb = document.createElement("td");
+  tb.innerText=value;
+  ta.innerText=key;
+  tr.appendChild(ta);
+  tr.appendChild(tb)
+  hdrive.appendChild(tr);
+}
+let img3 =info.drive[3];
+let ldrive = document.getElementById("loadList");
+for (let [key, value] of Object.entries(img3)) {
+  let tr = document.createElement("tr");
+  let ta = document.createElement("td");
+  let tb = document.createElement("td");
+  tb.innerText=value;
+  ta.innerText=key;
+  tr.appendChild(ta);
+  tr.appendChild(tb)
+  ldrive.appendChild(tr);
+}
+let img4=info.drive[4];
+let para = document.getElementById("paraList");
+for (let [key, value] of Object.entries(img4)) {
+  let tr = document.createElement("tr");
+  let ta = document.createElement("td");
+  let tb = document.createElement("td");
+  tb.innerText=value;
+  ta.innerText=key;
+  tr.appendChild(ta);
+  tr.appendChild(tb)
+  para.appendChild(tr);
+}
 
-var motor = document.getElementById("hide")
-let name = document.createElement("h5");
-let val = document.createElement("h6");
-name.innerText=theCompressor.motor;
-val.innerText=theCompressor.value;
-console.log( theCompressor.motor );
-motor.appendChild(name);
-motor.appendChild(val);
+
+
+
+
+
+
+
+
+
+
 
 // grid view
 var grid = info.grid;
@@ -124,7 +187,6 @@ for(let[key,value] of Object.entries(report)){
 
 }
 var report1 = info.report[1];
-console.log(report1);
 
 let select1 = document.getElementById("rep");
 
@@ -136,7 +198,6 @@ for(let[key,value] of Object.entries(report1)){
 
 }
 var report2 = info.report[2];
-console.log(report2);
 
 let select2 = document.getElementById("date");
 
@@ -158,7 +219,6 @@ for(let[key,value] of Object.entries(trend)){
 
 }
 var trend1 = info.report[1];
-console.log(report1);
 
 let pick1 = document.getElementById("dates");
 
@@ -170,7 +230,6 @@ for(let[key,value] of Object.entries(trend1)){
 
 }
 var trend2  = info.report[2];
-console.log(report2);
 
 let pick2 = document.getElementById("sf");
 
@@ -184,12 +243,7 @@ for(let[key,value] of Object.entries(trend2)){
 
 }
 
-$("#motor").hover(function(){
-  $("#hide").show();
-  // alert("sdas")
-  }, function(){
-  $("#hide").hide();
-});
+
 
 
 
