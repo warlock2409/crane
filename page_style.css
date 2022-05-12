@@ -1,8 +1,12 @@
+body{
+    overflow-x:hidden ;
+}
 /*-----------------------------------------------------------navigation bar */
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0px !important;
     margin: 20px;
     padding: 15px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.541);
@@ -23,13 +27,14 @@
     width: 230px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-span{
+.inner{
+    font-weight: 500;
     background-color: aliceblue;
     display: inline-block;
     padding: 2px;
     min-width: 20px;
     border-radius: 5px;
-    color: rgb(13, 185, 185);
+    color: rgb(8, 117, 117);
 }
 .search{
     padding-right: 20px;
@@ -41,16 +46,20 @@ span{
     padding: 0px;
 }
 
-#item{
+.item{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px; 
+    padding-bottom: 5px; 
+    padding-top: 5px;
     cursor: pointer;
 }
 #list{
     padding: 0px;
     
+}
+#list li:nth-child(even){
+    background-color: #c9c6c628;
 }
 #mat{
     
@@ -58,6 +67,7 @@ span{
 }
 
 #myTab{
+    margin-top: auto;
     padding: 0px;
     justify-content: unset !important;
 
@@ -76,13 +86,14 @@ span{
     margin: 10px;
     background-color: rgb(126, 11, 126) !important;
 }
-.info{
+.information{
     color: azure;
     display: flex;
     justify-content:space-between;
     padding: 15px;
     width: 98%;
     margin-top: 5px;
+    margin-bottom: 10px;
     height: 15vh;
     background-color: rgba(149,44,173,255);
     border-radius: 3px;
@@ -90,12 +101,60 @@ span{
 }
 .left{
     width:240px !important;
+    overflow-y: scroll;
+    height: 500px;
 }
 
 .slide{
     display: none;
 }
 
+.tab{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 300px;
+    margin:20px;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+  
+  
+}
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    
+  }
+tr:nth-child(odd){
+    background-color: rgba(28, 117, 168, 0.082);
+}
+.gridTable{
+width: 95% !important;
+position: relative;
+transform: translateX(2%);
+}
+.left::-webkit-scrollbar {
+    width: 10px;
+ 
+  }
+ .left::-webkit-scrollbar-track {
+    background: #a7a3a3; 
+    }
+ .left::-webkit-scrollbar-thumb {
+    background: rgb(142, 209, 209); 
+  }
+  .left::-webkit-scrollbar-thumb:hover {
+    background: rgb(63, 209, 82); 
+  }
+  .selectCompressor,.hdates,.hsf{
+      margin-left: 8px;
+      display: flex;
+      flex-direction: column;
+
+  }
+  .top{
+      display: flex;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+  }
 
 @media (max-width:780px){
     .slide{

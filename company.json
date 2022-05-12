@@ -1,0 +1,52 @@
+{
+    "compressorView":{
+        
+            "id":"1",
+            "company": "Andal Engg",
+            "fabNo":"7098708",
+            "phoneNo":"9999999999",
+            "lastUpdate":"2/3/2022",
+            "mod":"SD-10"
+    },
+    "grid":{
+        
+        "Air Pressure":"0",
+        "Discharge Temperature":"0",
+        "Run Hours":"0",
+        "load Hours":"0",	
+    "R Phase Current":"0",
+    "Y Phase Current":"0",
+    "B Phase Current":"0",	
+    "Oil Filter Used Time":"0",	
+    "Oil Separatror Used Time":"0",
+    "Air Filter Used Time"	:"0",
+    "Air Separatror Used Time":"0",
+    "Lube Oil Used Time":"0"
+
+    },
+    "report":[{
+        "mod":"UTV_P11",
+        "mod2":"UTV_P12"
+
+    },{
+        "mod":"UTV_P11",
+        "mod2":"UTV_P12"
+    },{
+        "mod":"UTV_P11",
+        "mod2":"UTV_P12"
+    }
+    ],
+    "trends":[{
+        "mod":"UTV_P11",
+        "mod2":"UTV_P12"
+
+    },{
+        "mod":"UTV_P11",
+        "mod2":"UTV_P12"
+    },{
+        "mod":"UTV_P11",
+        "mod2":"UTV_P12"
+    }
+    ]
+    
+}
