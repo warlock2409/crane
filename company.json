@@ -6,7 +6,9 @@
             "fabNo":"7098708",
             "phoneNo":"9999999999",
             "lastUpdate":"2/3/2022",
-            "mod":"SD-10"
+            "mod":"SD-10",
+            "motor":"Motor",
+            "value":"550 Hours"
     },
     "grid":{
         

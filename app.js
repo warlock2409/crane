@@ -87,8 +87,16 @@ mod.appendChild(p);
 var time= document.getElementById("update");
 var span = document.createElement("span");
 span.innerText=theCompressor.lastUpdate;
-console.log(theCompressor.lastUpdate);
 time.appendChild(span)
+
+var motor = document.getElementById("hide")
+let name = document.createElement("h5");
+let val = document.createElement("h6");
+name.innerText=theCompressor.motor;
+val.innerText=theCompressor.value;
+console.log( theCompressor.motor );
+motor.appendChild(name);
+motor.appendChild(val);
 
 // grid view
 var grid = info.grid;
@@ -175,6 +183,14 @@ for(let[key,value] of Object.entries(trend2)){
 }
 
 }
+
+$("#motor").hover(function(){
+  $("#hide").show();
+  // alert("sdas")
+  }, function(){
+  $("#hide").hide();
+});
+
 
 
 
