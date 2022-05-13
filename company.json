@@ -9,23 +9,33 @@
             "mod":"SD-10"            
     },
     "drive":[{
-        "Current:":"20A",
+        "bridge":{
+        "Current:":"2A",
         "Hours":"10 H",
-        "Status":"1"
+        "Status":"-1"
+       }
     },{
+        "trolly":{
         "Current":"20A",
-        "Hours":"10 Hours",
-        "Status":"-1"  
+        "Hours":"10 H",
+        "Status":"1" 
+        } 
     },{
+        "hoist":{
         "Current":"20A",
-        "Hours":"10 Hours",
+        "Hours":"10 H",
         "Vibration":"10",
         "Break":"100 mm",
         "Status":"0"
+        }
     },{
+        "load":{
         "Current Load":"100 T",
-        "Max Load":"1000T"
+        "Max Load":"1000T",
+        "Status":"1"
+        }
     },{
+        "parameter":{
         "Total No of Starts":"1",
         "Total Running Time":"0",
         "The Measured Actual Load Value":"0",
@@ -41,6 +51,7 @@
         "Total No of Under Voltage Incidents":"0",
         "Total No of Over Current Incidents":"0",
         "Wear Indicator for Wheel":"0"
+        }
     }
 
 

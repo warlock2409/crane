@@ -25,10 +25,13 @@ $(document).ready(function(){
         if(data[i].status=="active"){
             block.classList.add("active");
             
+          }else if(data[i].status=="alert"){
+            // console.log("alert");
+            block.classList.add("danger");
+            
           }else{
-            
             block.classList.add("inActive");
-            
+
           }
         button.innerText=data[i].status;
        

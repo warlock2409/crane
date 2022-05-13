@@ -1,5 +1,6 @@
+
+
 $(document).ready(function(){
-//  dynamic we start
 // fetch data 
 fetch('item.json')
 .then(function (response) {
@@ -89,9 +90,23 @@ var span = document.createElement("span");
 span.innerText=theCompressor.lastUpdate;
 time.appendChild(span)
 // image data
-let img =info.drive[0];
+let img =info.drive[0].bridge;
 let bdrive = document.getElementById("bridgeList");
+// console.log(img.hasOwnProperty("Status"))
 for (let [key, value] of Object.entries(img)) {
+  if(key=="Status"){
+
+    if(value=="1"){
+
+      bdrive.classList.add("on");
+    }else if(value=="-1"){
+      bdrive.classList.add("danger");
+
+    }else {
+      bdrive.classList.add("off");
+
+    }
+  }else{
   let tr = document.createElement("tr");
   let ta = document.createElement("td");
   let tb = document.createElement("td");
@@ -100,10 +115,24 @@ for (let [key, value] of Object.entries(img)) {
   tr.appendChild(ta);
   tr.appendChild(tb)
   bdrive.appendChild(tr);
+  }
 }
-let img1 =info.drive[1];
+let img1 =info.drive[1].trolly;
 let tdrive = document.getElementById("trollyList");
 for (let [key, value] of Object.entries(img1)) {
+  if(key=="Status"){
+
+    if(value=="1"){
+
+      tdrive.classList.add("on");
+    }else if(value=="-1"){
+      tdrive.classList.add("danger");
+
+    }else {
+      tdrive.classList.add("off");
+
+    }
+  }else{
   let tr = document.createElement("tr");
   let ta = document.createElement("td");
   let tb = document.createElement("td");
@@ -112,10 +141,24 @@ for (let [key, value] of Object.entries(img1)) {
   tr.appendChild(ta);
   tr.appendChild(tb)
   tdrive.appendChild(tr);
+  }
 }
-let img2 =info.drive[2];
+let img2 =info.drive[2].hoist;
 let hdrive = document.getElementById("hoistList");
 for (let [key, value] of Object.entries(img2)) {
+  if(key=="Status"){
+
+    if(value=="1"){
+
+      hdrive.classList.add("on");
+    }else if(value=="-1"){
+      hdrive.classList.add("danger");
+
+    }else {
+      hdrive.classList.add("off");
+
+    }
+  }else{
   let tr = document.createElement("tr");
   let ta = document.createElement("td");
   let tb = document.createElement("td");
@@ -124,10 +167,24 @@ for (let [key, value] of Object.entries(img2)) {
   tr.appendChild(ta);
   tr.appendChild(tb)
   hdrive.appendChild(tr);
+  }
 }
-let img3 =info.drive[3];
+let img3 =info.drive[3].load;
 let ldrive = document.getElementById("loadList");
 for (let [key, value] of Object.entries(img3)) {
+  if(key=="Status"){
+
+    if(value=="1"){
+
+      ldrive.classList.add("on");
+    }else if(value=="-1"){
+      ldrive.classList.add("danger");
+
+    }else {
+      ldrive.classList.add("off");
+
+    }
+  }else{
   let tr = document.createElement("tr");
   let ta = document.createElement("td");
   let tb = document.createElement("td");
@@ -136,8 +193,9 @@ for (let [key, value] of Object.entries(img3)) {
   tr.appendChild(ta);
   tr.appendChild(tb)
   ldrive.appendChild(tr);
+  }
 }
-let img4=info.drive[4];
+let img4=info.drive[4].parameter;
 let para = document.getElementById("paraList");
 for (let [key, value] of Object.entries(img4)) {
   let tr = document.createElement("tr");
